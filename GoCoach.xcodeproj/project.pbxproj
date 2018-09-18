@@ -1,0 +1,788 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C19C3B82150058700B37416 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C3B72150058700B37416 /* AppDelegate.swift */; };
+		0C19C3BA2150058700B37416 /* TeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C3B92150058700B37416 /* TeamVC.swift */; };
+		0C19C3BD2150058700B37416 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C19C3BB2150058700B37416 /* Main.storyboard */; };
+		0C19C3BF2150058900B37416 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C19C3BE2150058900B37416 /* Assets.xcassets */; };
+		0C19C3C22150058900B37416 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C19C3C02150058900B37416 /* LaunchScreen.storyboard */; };
+		0C19C3CD2150058900B37416 /* GoCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C3CC2150058900B37416 /* GoCoachTests.swift */; };
+		0C19C3D82150058A00B37416 /* GoCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C3D72150058A00B37416 /* GoCoachUITests.swift */; };
+		0C19C45A21501B5800B37416 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C45921501B5800B37416 /* Team.swift */; };
+		0CB2FE7721502F7B0079FE17 /* Roster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE7621502F7B0079FE17 /* Roster.swift */; };
+		0CB2FE79215030840079FE17 /* Positions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE78215030840079FE17 /* Positions.swift */; };
+		0CB2FE7B215032AB0079FE17 /* FootballStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE7A215032AB0079FE17 /* FootballStats.swift */; };
+		0CB2FE80215041BF0079FE17 /* TeamListVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE7F215041BF0079FE17 /* TeamListVC.swift */; };
+		0CB2FE83215046420079FE17 /* TeamCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE82215046420079FE17 /* TeamCell.swift */; };
+		0CB2FE8521504B950079FE17 /* AccountDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE8421504B950079FE17 /* AccountDash.swift */; };
+		0CB2FE872150570E0079FE17 /* TeamDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE862150570E0079FE17 /* TeamDashboardVC.swift */; };
+		0CB2FE89215142060079FE17 /* EditTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE88215142060079FE17 /* EditTeamVC.swift */; };
+		69B9F17EE80AB5855367028F /* Pods_GoCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA04C0E0D9CC04E313F182C /* Pods_GoCoach.framework */; };
+		9B1D26226A217F2BC2EF7027 /* Pods_GoCoachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32554C25A183E32E5003F239 /* Pods_GoCoachTests.framework */; };
+		D9E47BC5E4A7422427A5D4F1 /* Pods_GoCoachUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F5EC2CAAD085CF16FF8D86 /* Pods_GoCoachUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C19C3C92150058900B37416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C19C3AC2150058700B37416 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C19C3B32150058700B37416;
+			remoteInfo = GoCoach;
+		};
+		0C19C3D42150058A00B37416 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C19C3AC2150058700B37416 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C19C3B32150058700B37416;
+			remoteInfo = GoCoach;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0424EC42C9A4C1FF25D22C43 /* Pods-GoCoach.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoCoach.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoCoach/Pods-GoCoach.release.xcconfig"; sourceTree = "<group>"; };
+		09DD1670EA66F818667857E5 /* Pods-GoCoachUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoCoachUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoCoachUITests/Pods-GoCoachUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0C19C3B42150058700B37416 /* GoCoach.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C19C3B72150058700B37416 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C19C3B92150058700B37416 /* TeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamVC.swift; sourceTree = "<group>"; };
+		0C19C3BC2150058700B37416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C19C3BE2150058900B37416 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C19C3C12150058900B37416 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C19C3C32150058900B37416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C19C3C82150058900B37416 /* GoCoachTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoCoachTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C19C3CC2150058900B37416 /* GoCoachTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoCoachTests.swift; sourceTree = "<group>"; };
+		0C19C3CE2150058900B37416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C19C3D32150058A00B37416 /* GoCoachUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoCoachUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C19C3D72150058A00B37416 /* GoCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoCoachUITests.swift; sourceTree = "<group>"; };
+		0C19C3D92150058A00B37416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C19C45921501B5800B37416 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		0CB2FE7621502F7B0079FE17 /* Roster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roster.swift; sourceTree = "<group>"; };
+		0CB2FE78215030840079FE17 /* Positions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Positions.swift; sourceTree = "<group>"; };
+		0CB2FE7A215032AB0079FE17 /* FootballStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballStats.swift; sourceTree = "<group>"; };
+		0CB2FE7F215041BF0079FE17 /* TeamListVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListVC.swift; sourceTree = "<group>"; };
+		0CB2FE82215046420079FE17 /* TeamCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamCell.swift; sourceTree = "<group>"; };
+		0CB2FE8421504B950079FE17 /* AccountDash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDash.swift; sourceTree = "<group>"; };
+		0CB2FE862150570E0079FE17 /* TeamDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDashboardVC.swift; sourceTree = "<group>"; };
+		0CB2FE88215142060079FE17 /* EditTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTeamVC.swift; sourceTree = "<group>"; };
+		1AA04C0E0D9CC04E313F182C /* Pods_GoCoach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32554C25A183E32E5003F239 /* Pods_GoCoachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80B8B2397D5CD47E0BEA1A5F /* Pods-GoCoachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoCoachTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoCoachTests/Pods-GoCoachTests.debug.xcconfig"; sourceTree = "<group>"; };
+		87F5EC2CAAD085CF16FF8D86 /* Pods_GoCoachUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoCoachUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8B1FE2A31CA4E9B3D4AD5B4F /* Pods-GoCoachTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoCoachTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoCoachTests/Pods-GoCoachTests.release.xcconfig"; sourceTree = "<group>"; };
+		B78CE14493DC3F53C67E7654 /* Pods-GoCoachUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoCoachUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoCoachUITests/Pods-GoCoachUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		D4BA3E15B484BAAB70AF36A4 /* Pods-GoCoach.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoCoach.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoCoach/Pods-GoCoach.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C19C3B12150058700B37416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69B9F17EE80AB5855367028F /* Pods_GoCoach.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C19C3C52150058900B37416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9B1D26226A217F2BC2EF7027 /* Pods_GoCoachTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C19C3D02150058A00B37416 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D9E47BC5E4A7422427A5D4F1 /* Pods_GoCoachUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C19C3AB2150058700B37416 = {
+			isa = PBXGroup;
+			children = (
+				0C19C3B62150058700B37416 /* GoCoach */,
+				0C19C3CB2150058900B37416 /* GoCoachTests */,
+				0C19C3D62150058A00B37416 /* GoCoachUITests */,
+				0C19C3B52150058700B37416 /* Products */,
+				1D53F65EDDA62015699F16ED /* Pods */,
+				9D0615ADC7D443BBB37AB0D3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C19C3B52150058700B37416 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C3B42150058700B37416 /* GoCoach.app */,
+				0C19C3C82150058900B37416 /* GoCoachTests.xctest */,
+				0C19C3D32150058A00B37416 /* GoCoachUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C19C3B62150058700B37416 /* GoCoach */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FE81215046210079FE17 /* Cell */,
+				0CB2FE7E2150419A0079FE17 /* Views */,
+				0CB2FE7D2150418F0079FE17 /* Controllers */,
+				0C19C45B21502B4300B37416 /* models */,
+				0C19C3B72150058700B37416 /* AppDelegate.swift */,
+				0C19C3BB2150058700B37416 /* Main.storyboard */,
+				0C19C3BE2150058900B37416 /* Assets.xcassets */,
+				0C19C3C02150058900B37416 /* LaunchScreen.storyboard */,
+				0C19C3C32150058900B37416 /* Info.plist */,
+			);
+			path = GoCoach;
+			sourceTree = "<group>";
+		};
+		0C19C3CB2150058900B37416 /* GoCoachTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C3CC2150058900B37416 /* GoCoachTests.swift */,
+				0C19C3CE2150058900B37416 /* Info.plist */,
+			);
+			path = GoCoachTests;
+			sourceTree = "<group>";
+		};
+		0C19C3D62150058A00B37416 /* GoCoachUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C3D72150058A00B37416 /* GoCoachUITests.swift */,
+				0C19C3D92150058A00B37416 /* Info.plist */,
+			);
+			path = GoCoachUITests;
+			sourceTree = "<group>";
+		};
+		0C19C45B21502B4300B37416 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C45921501B5800B37416 /* Team.swift */,
+				0CB2FE7621502F7B0079FE17 /* Roster.swift */,
+				0CB2FE78215030840079FE17 /* Positions.swift */,
+				0CB2FE7A215032AB0079FE17 /* FootballStats.swift */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		0CB2FE7D2150418F0079FE17 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				0C19C3B92150058700B37416 /* TeamVC.swift */,
+				0CB2FE7F215041BF0079FE17 /* TeamListVC.swift */,
+				0CB2FE8421504B950079FE17 /* AccountDash.swift */,
+				0CB2FE862150570E0079FE17 /* TeamDashboardVC.swift */,
+				0CB2FE88215142060079FE17 /* EditTeamVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		0CB2FE7E2150419A0079FE17 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0CB2FE81215046210079FE17 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				0CB2FE82215046420079FE17 /* TeamCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		1D53F65EDDA62015699F16ED /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D4BA3E15B484BAAB70AF36A4 /* Pods-GoCoach.debug.xcconfig */,
+				0424EC42C9A4C1FF25D22C43 /* Pods-GoCoach.release.xcconfig */,
+				80B8B2397D5CD47E0BEA1A5F /* Pods-GoCoachTests.debug.xcconfig */,
+				8B1FE2A31CA4E9B3D4AD5B4F /* Pods-GoCoachTests.release.xcconfig */,
+				B78CE14493DC3F53C67E7654 /* Pods-GoCoachUITests.debug.xcconfig */,
+				09DD1670EA66F818667857E5 /* Pods-GoCoachUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9D0615ADC7D443BBB37AB0D3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1AA04C0E0D9CC04E313F182C /* Pods_GoCoach.framework */,
+				32554C25A183E32E5003F239 /* Pods_GoCoachTests.framework */,
+				87F5EC2CAAD085CF16FF8D86 /* Pods_GoCoachUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C19C3B32150058700B37416 /* GoCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C19C3DC2150058A00B37416 /* Build configuration list for PBXNativeTarget "GoCoach" */;
+			buildPhases = (
+				15B1EFEA45B7D6E0FFE9ACE8 /* [CP] Check Pods Manifest.lock */,
+				0C19C3B02150058700B37416 /* Sources */,
+				0C19C3B12150058700B37416 /* Frameworks */,
+				0C19C3B22150058700B37416 /* Resources */,
+				4FA238409C6F6D571B94958B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GoCoach;
+			productName = GoCoach;
+			productReference = 0C19C3B42150058700B37416 /* GoCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C19C3C72150058900B37416 /* GoCoachTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C19C3DF2150058A00B37416 /* Build configuration list for PBXNativeTarget "GoCoachTests" */;
+			buildPhases = (
+				C431920F552ECEBB08E126BB /* [CP] Check Pods Manifest.lock */,
+				0C19C3C42150058900B37416 /* Sources */,
+				0C19C3C52150058900B37416 /* Frameworks */,
+				0C19C3C62150058900B37416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C19C3CA2150058900B37416 /* PBXTargetDependency */,
+			);
+			name = GoCoachTests;
+			productName = GoCoachTests;
+			productReference = 0C19C3C82150058900B37416 /* GoCoachTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C19C3D22150058A00B37416 /* GoCoachUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C19C3E22150058A00B37416 /* Build configuration list for PBXNativeTarget "GoCoachUITests" */;
+			buildPhases = (
+				9A1952038B3B958F9507A8B8 /* [CP] Check Pods Manifest.lock */,
+				0C19C3CF2150058A00B37416 /* Sources */,
+				0C19C3D02150058A00B37416 /* Frameworks */,
+				0C19C3D12150058A00B37416 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C19C3D52150058A00B37416 /* PBXTargetDependency */,
+			);
+			name = GoCoachUITests;
+			productName = GoCoachUITests;
+			productReference = 0C19C3D32150058A00B37416 /* GoCoachUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C19C3AC2150058700B37416 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Christopher Crowd";
+				TargetAttributes = {
+					0C19C3B32150058700B37416 = {
+						CreatedOnToolsVersion = 9.4.1;
+					};
+					0C19C3C72150058900B37416 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0C19C3B32150058700B37416;
+					};
+					0C19C3D22150058A00B37416 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0C19C3B32150058700B37416;
+					};
+				};
+			};
+			buildConfigurationList = 0C19C3AF2150058700B37416 /* Build configuration list for PBXProject "GoCoach" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C19C3AB2150058700B37416;
+			productRefGroup = 0C19C3B52150058700B37416 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C19C3B32150058700B37416 /* GoCoach */,
+				0C19C3C72150058900B37416 /* GoCoachTests */,
+				0C19C3D22150058A00B37416 /* GoCoachUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C19C3B22150058700B37416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C19C3C22150058900B37416 /* LaunchScreen.storyboard in Resources */,
+				0C19C3BF2150058900B37416 /* Assets.xcassets in Resources */,
+				0C19C3BD2150058700B37416 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C19C3C62150058900B37416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C19C3D12150058A00B37416 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		15B1EFEA45B7D6E0FFE9ACE8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoCoach-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4FA238409C6F6D571B94958B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GoCoach/Pods-GoCoach-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Spring/Spring.framework",
+				"${BUILT_PRODUCTS_DIR}/TPKeyboardAvoiding/TPKeyboardAvoiding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Spring.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPKeyboardAvoiding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoCoach/Pods-GoCoach-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9A1952038B3B958F9507A8B8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoCoachUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C431920F552ECEBB08E126BB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GoCoachTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C19C3B02150058700B37416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0CB2FE8521504B950079FE17 /* AccountDash.swift in Sources */,
+				0CB2FE83215046420079FE17 /* TeamCell.swift in Sources */,
+				0CB2FE80215041BF0079FE17 /* TeamListVC.swift in Sources */,
+				0C19C45A21501B5800B37416 /* Team.swift in Sources */,
+				0CB2FE872150570E0079FE17 /* TeamDashboardVC.swift in Sources */,
+				0CB2FE7B215032AB0079FE17 /* FootballStats.swift in Sources */,
+				0C19C3BA2150058700B37416 /* TeamVC.swift in Sources */,
+				0CB2FE7721502F7B0079FE17 /* Roster.swift in Sources */,
+				0CB2FE79215030840079FE17 /* Positions.swift in Sources */,
+				0C19C3B82150058700B37416 /* AppDelegate.swift in Sources */,
+				0CB2FE89215142060079FE17 /* EditTeamVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C19C3C42150058900B37416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C19C3CD2150058900B37416 /* GoCoachTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C19C3CF2150058A00B37416 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C19C3D82150058A00B37416 /* GoCoachUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C19C3CA2150058900B37416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C19C3B32150058700B37416 /* GoCoach */;
+			targetProxy = 0C19C3C92150058900B37416 /* PBXContainerItemProxy */;
+		};
+		0C19C3D52150058A00B37416 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C19C3B32150058700B37416 /* GoCoach */;
+			targetProxy = 0C19C3D42150058A00B37416 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C19C3BB2150058700B37416 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C19C3BC2150058700B37416 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C19C3C02150058900B37416 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C19C3C12150058900B37416 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C19C3DA2150058A00B37416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C19C3DB2150058A00B37416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C19C3DD2150058A00B37416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4BA3E15B484BAAB70AF36A4 /* Pods-GoCoach.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87KXWMC5C9;
+				INFOPLIST_FILE = GoCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C19C3DE2150058A00B37416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0424EC42C9A4C1FF25D22C43 /* Pods-GoCoach.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87KXWMC5C9;
+				INFOPLIST_FILE = GoCoach/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoach;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C19C3E02150058A00B37416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B8B2397D5CD47E0BEA1A5F /* Pods-GoCoachTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87KXWMC5C9;
+				INFOPLIST_FILE = GoCoachTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoCoach.app/GoCoach";
+			};
+			name = Debug;
+		};
+		0C19C3E12150058A00B37416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8B1FE2A31CA4E9B3D4AD5B4F /* Pods-GoCoachTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87KXWMC5C9;
+				INFOPLIST_FILE = GoCoachTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoachTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoCoach.app/GoCoach";
+			};
+			name = Release;
+		};
+		0C19C3E32150058A00B37416 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B78CE14493DC3F53C67E7654 /* Pods-GoCoachUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87KXWMC5C9;
+				INFOPLIST_FILE = GoCoachUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoachUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoCoach;
+			};
+			name = Debug;
+		};
+		0C19C3E42150058A00B37416 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09DD1670EA66F818667857E5 /* Pods-GoCoachUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 87KXWMC5C9;
+				INFOPLIST_FILE = GoCoachUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoachUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GoCoach;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C19C3AF2150058700B37416 /* Build configuration list for PBXProject "GoCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C19C3DA2150058A00B37416 /* Debug */,
+				0C19C3DB2150058A00B37416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C19C3DC2150058A00B37416 /* Build configuration list for PBXNativeTarget "GoCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C19C3DD2150058A00B37416 /* Debug */,
+				0C19C3DE2150058A00B37416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C19C3DF2150058A00B37416 /* Build configuration list for PBXNativeTarget "GoCoachTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C19C3E02150058A00B37416 /* Debug */,
+				0C19C3E12150058A00B37416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C19C3E22150058A00B37416 /* Build configuration list for PBXNativeTarget "GoCoachUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C19C3E32150058A00B37416 /* Debug */,
+				0C19C3E42150058A00B37416 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C19C3AC2150058700B37416 /* Project object */;
+}

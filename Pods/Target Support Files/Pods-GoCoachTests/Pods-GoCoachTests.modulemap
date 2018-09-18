@@ -1,0 +1,6 @@
+framework module Pods_GoCoachTests {
+  umbrella header "Pods-GoCoachTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
