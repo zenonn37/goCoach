@@ -34,6 +34,13 @@ class TeamListVC: UIViewController {
         
         fetchObjects()
         tableView.reloadData()
+        
+        if ((teams?.count) != nil){
+            
+            print("has stuff")
+        }else{
+            print("empty")
+        }
     }
     func fetchObjects(){
     
@@ -95,7 +102,7 @@ extension TeamListVC: UITableViewDelegate, UITableViewDataSource{
         return true
     }
     
-    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCellEditingStyle {
+    func tableView(_ tableView: UITableView, editingStyleForRowAt indexPath: IndexPath) -> UITableViewCell.EditingStyle {
         return .none
     }
     func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {

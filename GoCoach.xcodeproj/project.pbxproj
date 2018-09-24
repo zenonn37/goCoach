@@ -23,6 +23,9 @@
 		0CB2FE8521504B950079FE17 /* AccountDash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE8421504B950079FE17 /* AccountDash.swift */; };
 		0CB2FE872150570E0079FE17 /* TeamDashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE862150570E0079FE17 /* TeamDashboardVC.swift */; };
 		0CB2FE89215142060079FE17 /* EditTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE88215142060079FE17 /* EditTeamVC.swift */; };
+		0CE34D1D215837F6006B8927 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE34D1C215837F6006B8927 /* PlayerVC.swift */; };
+		0CF46BAB215842A8009A2925 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF46BAA215842A8009A2925 /* PlayerCell.swift */; };
+		0CF46BAD21592680009A2925 /* CreatePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF46BAC21592680009A2925 /* CreatePlayerVC.swift */; };
 		69B9F17EE80AB5855367028F /* Pods_GoCoach.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AA04C0E0D9CC04E313F182C /* Pods_GoCoach.framework */; };
 		9B1D26226A217F2BC2EF7027 /* Pods_GoCoachTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32554C25A183E32E5003F239 /* Pods_GoCoachTests.framework */; };
 		D9E47BC5E4A7422427A5D4F1 /* Pods_GoCoachUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F5EC2CAAD085CF16FF8D86 /* Pods_GoCoachUITests.framework */; };
@@ -70,6 +73,9 @@
 		0CB2FE8421504B950079FE17 /* AccountDash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDash.swift; sourceTree = "<group>"; };
 		0CB2FE862150570E0079FE17 /* TeamDashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDashboardVC.swift; sourceTree = "<group>"; };
 		0CB2FE88215142060079FE17 /* EditTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTeamVC.swift; sourceTree = "<group>"; };
+		0CE34D1C215837F6006B8927 /* PlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		0CF46BAA215842A8009A2925 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		0CF46BAC21592680009A2925 /* CreatePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerVC.swift; sourceTree = "<group>"; };
 		1AA04C0E0D9CC04E313F182C /* Pods_GoCoach.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoCoach.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		32554C25A183E32E5003F239 /* Pods_GoCoachTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GoCoachTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		80B8B2397D5CD47E0BEA1A5F /* Pods-GoCoachTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoCoachTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoCoachTests/Pods-GoCoachTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -182,6 +188,8 @@
 				0CB2FE8421504B950079FE17 /* AccountDash.swift */,
 				0CB2FE862150570E0079FE17 /* TeamDashboardVC.swift */,
 				0CB2FE88215142060079FE17 /* EditTeamVC.swift */,
+				0CE34D1C215837F6006B8927 /* PlayerVC.swift */,
+				0CF46BAC21592680009A2925 /* CreatePlayerVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -197,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				0CB2FE82215046420079FE17 /* TeamCell.swift */,
+				0CF46BAA215842A8009A2925 /* PlayerCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -296,13 +305,16 @@
 				TargetAttributes = {
 					0C19C3B32150058700B37416 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 					};
 					0C19C3C72150058900B37416 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 0C19C3B32150058700B37416;
 					};
 					0C19C3D22150058A00B37416 = {
 						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 1000;
 						TestTargetID = 0C19C3B32150058700B37416;
 					};
 				};
@@ -443,6 +455,7 @@
 				0CB2FE8521504B950079FE17 /* AccountDash.swift in Sources */,
 				0CB2FE83215046420079FE17 /* TeamCell.swift in Sources */,
 				0CB2FE80215041BF0079FE17 /* TeamListVC.swift in Sources */,
+				0CE34D1D215837F6006B8927 /* PlayerVC.swift in Sources */,
 				0C19C45A21501B5800B37416 /* Team.swift in Sources */,
 				0CB2FE872150570E0079FE17 /* TeamDashboardVC.swift in Sources */,
 				0CB2FE7B215032AB0079FE17 /* FootballStats.swift in Sources */,
@@ -451,6 +464,8 @@
 				0CB2FE79215030840079FE17 /* Positions.swift in Sources */,
 				0C19C3B82150058700B37416 /* AppDelegate.swift in Sources */,
 				0CB2FE89215142060079FE17 /* EditTeamVC.swift in Sources */,
+				0CF46BAB215842A8009A2925 /* PlayerCell.swift in Sources */,
+				0CF46BAD21592680009A2925 /* CreatePlayerVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,7 +648,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -652,7 +667,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoach;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -673,7 +688,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoachTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoCoach.app/GoCoach";
 			};
@@ -695,7 +710,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoachTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GoCoach.app/GoCoach";
 			};
@@ -716,7 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoachUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GoCoach;
 			};
@@ -737,7 +752,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = volitional.GoCoachUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = GoCoach;
 			};

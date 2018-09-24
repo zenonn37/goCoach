@@ -45,10 +45,26 @@ class TeamDashboardVC: UIViewController {
         performSegue(withIdentifier: "editTeam", sender: self)
         
     }
+    @IBAction func newPlayer(_ sender: Any) {
+        
+        performSegue(withIdentifier: "newPlayer", sender: self)
+        
+    }
+    @IBAction func playlerTable(_ sender: Any) {
+        performSegue(withIdentifier: "playerTable", sender: self)
+    }
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "editTeam" {
             let editTeam = segue.destination as! EditTeamVC
             editTeam.teamEdit = teamDash
+        }else if segue.identifier == "newPlayer"{
+            let newPlayer = segue.destination as! CreatePlayerVC
+            newPlayer.selectedTeam = teamDash
+        }else if segue.identifier == "playerTable"{
+            let playerTable = segue.destination as! PlayerVC
+            playerTable.selectedTeam = teamDash
+            print(teamDash)
+            
         }
     }
     
