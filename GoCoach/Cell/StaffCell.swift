@@ -10,6 +10,8 @@ import UIKit
 
 class StaffCell: UITableViewCell {
 
+    @IBOutlet weak var name: UILabel!
+    @IBOutlet weak var role: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -22,6 +24,9 @@ class StaffCell: UITableViewCell {
     }
     
     func configureStaffCell(staff:Staff){
+        
+        self.name.text = staff.first + " " + staff.last
+        self.role.text = staff.role
         
     }
 

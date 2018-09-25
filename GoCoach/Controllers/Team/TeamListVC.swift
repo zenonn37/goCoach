@@ -16,6 +16,7 @@ class TeamListVC: UIViewController {
     var teams:Results<Team>?
 
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -52,6 +53,9 @@ class TeamListVC: UIViewController {
     
 
 
+    @IBAction func backBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
+    }
     
 
     /*

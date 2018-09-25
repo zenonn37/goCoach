@@ -16,7 +16,12 @@ class StaffVC: UIViewController {
     var staff: Results<Staff>?
     
    
-    
+    var selectedTeam:Team?{
+        
+        didSet{
+            getStaffObjects()
+        }
+    }
 
     
     @IBOutlet weak var emptyTableMessage: UIView!
@@ -27,8 +32,26 @@ class StaffVC: UIViewController {
     }
     
     
-    @IBAction func createBtn(_ sender: Any) {
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "createStaff"{
+            let create = segue.destination as! CreateStaffVC
+             create.selectedTeam = selectedTeam
+            
+            
+        }else if segue.identifier == "staffProfile"{
+            let profile = segue.destination as! StaffProfile
+            
+            if let indexPath = tableView.indexPathForSelectedRow{
+                profile.staff = staff?[indexPath.row]
+            }
+        }
     }
+    @IBAction func createBtn(_ sender: Any) {
+        performSegue(withIdentifier: "createStaff", sender: nil)
+    }
+    
+    
     
     
     
@@ -36,12 +59,7 @@ class StaffVC: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var selectedTeam:Team?{
-        
-        didSet{
-            getStaffObjects()
-        }
-    }
+   
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -102,6 +120,12 @@ extension StaffVC: UITableViewDelegate, UITableViewDataSource{
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if staff?[indexPath.row] != nil{
+            performSegue(withIdentifier: "staffProfile", sender: nil)
+        }
     }
     
     
