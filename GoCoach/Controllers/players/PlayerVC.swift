@@ -79,6 +79,11 @@ class PlayerVC: UIViewController {
         if  segue.identifier == "addPlayer" {
             let addPlayer =  segue.destination as! CreatePlayerVC
             addPlayer.selectedTeam = selectedTeam
+        }else if segue.identifier == "playerDetail"{
+            let playerDetail = segue.destination as! PlayerProfileVC
+            if let indexPath = tableView.indexPathForSelectedRow{
+                playerDetail.player = players?[indexPath.row]
+            }
         }
     }
     
@@ -108,6 +113,14 @@ extension PlayerVC: UITableViewDelegate, UITableViewDataSource{
         
         
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if players?[indexPath.row] != nil{
+            performSegue(withIdentifier: "playerDetail", sender: self)
+        }
+    }
+    
+    
     
     
 }

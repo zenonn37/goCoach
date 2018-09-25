@@ -20,7 +20,7 @@ class PlayerCell: UITableViewCell {
     func configureCell(player:Roster){
         
         nameLbl.text = player.first + " " + player.last
-        playerImage.image = UIImage(named: "94.jpg")
+        playerImage.image = UIImage(named: "male_94.jpg")
         //positionLbl.text = "LB,WR"
         uniformNumberLbl.text = "45"
       

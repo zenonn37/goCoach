@@ -17,6 +17,8 @@ class TeamDashboardVC: UIViewController {
 
     @IBOutlet weak var nameLBL: UILabel!
     @IBOutlet weak var sport: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -36,7 +38,10 @@ class TeamDashboardVC: UIViewController {
         }
        
     }
-
+    @IBAction func staffList(_ sender: Any) {
+        performSegue(withIdentifier: "staffList", sender: self)
+    }
+    
     @IBAction func backToList(_ sender: Any) {
         dismiss(animated: true, completion: nil)
     }
@@ -65,6 +70,9 @@ class TeamDashboardVC: UIViewController {
             playerTable.selectedTeam = teamDash
             print(teamDash)
             
+        }else if segue.identifier == "staffList"{
+            let staffList = segue.destination as! StaffVC
+            staffList.selectedTeam = teamDash
         }
     }
     

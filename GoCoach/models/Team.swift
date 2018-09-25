@@ -21,6 +21,7 @@ class Team: Object {
     @objc dynamic var location:String = ""
     
     let roster = List<Roster>()
+    let staff = List<Staff>()
     
     
     override static func primaryKey() -> String?{
