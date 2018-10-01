@@ -18,7 +18,8 @@ class PlayerVC: UIViewController {
     
     let realm = try! Realm()
     
-    var players: Results<Roster>?
+    //var players: Results<Roster>?
+    var players: List<Roster>?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,7 +41,7 @@ class PlayerVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if players?.count != nil {
+        if players?.count != 0 {
             tableView.isHidden = false
             emptyTableLbl.isHidden = true
         }else{
@@ -54,7 +55,8 @@ class PlayerVC: UIViewController {
     
     func fetchRoster(){
      
-       players = selectedTeam?.roster.sorted(byKeyPath: "age", ascending: true)
+       //players = selectedTeam?.roster.sorted(byKeyPath: "age", ascending: true)
+        players = selectedTeam?.roster
     }
     
 
@@ -73,6 +75,12 @@ class PlayerVC: UIViewController {
     @IBAction func createNewPlayer(_ sender: Any) {
         debugPrint("new player")
         performSegue(withIdentifier: "addPlayer", sender: self)
+    }
+    
+    
+    
+    @IBAction func backBtn(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

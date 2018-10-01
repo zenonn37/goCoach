@@ -23,8 +23,7 @@ class TeamListVC: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         
-     fetchObjects()
-        tableView.reloadData()
+  
      
 
       
@@ -33,12 +32,12 @@ class TeamListVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        fetchObjects()
-        tableView.reloadData()
+      
         
-        if ((teams?.count) != nil){
+        if teams?.count != 0{
             
-            print("has stuff")
+            fetchObjects()
+            tableView.reloadData()
         }else{
             print("empty")
         }

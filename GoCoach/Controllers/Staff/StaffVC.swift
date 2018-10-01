@@ -13,7 +13,9 @@ class StaffVC: UIViewController {
     
     let realm =  try!  Realm()
     
-    var staff: Results<Staff>?
+    //var staff: Results<Staff>?
+    var staff: List<Staff>?
+    
     
    
     var selectedTeam:Team?{
@@ -72,7 +74,7 @@ class StaffVC: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        if staff?.count != nil {
+        if staff?.count != 0 {
             getStaffObjects()
             tableView.reloadData()
               tableView.isHidden = false
@@ -89,7 +91,8 @@ class StaffVC: UIViewController {
     
     func getStaffObjects(){
         
-        staff = selectedTeam?.staff.sorted(byKeyPath: "first", ascending: true)
+        //staff = selectedTeam?.staff.sorted(byKeyPath: "first", ascending: true)
+        staff = selectedTeam?.staff
     }
 
     /*

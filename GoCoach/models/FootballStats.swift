@@ -16,9 +16,13 @@ class FootballStat: Object {
     @objc dynamic var passingYards:Double = 0
     @objc dynamic var passingTouchDowns:Int = 0
     @objc dynamic var rushingYards:Double = 0
+    @objc dynamic var rushingTouchDowns:Int = 0
+    @objc dynamic var fumbles:Int = 0
     @objc dynamic var Interceptions:Int = 0
     @objc dynamic var completions:Int = 0
     @objc dynamic var passingAttempts:Int = 0
+    @objc dynamic var plays:Int = 0
+    @objc dynamic var gameDay:Int = 0
     
     
     var football = LinkingObjects(fromType: Roster.self, property: "footballStats")
@@ -26,6 +30,10 @@ class FootballStat: Object {
     override static func primaryKey() -> String?{
         
         return "id"
+    }
+    
+    private func finalizeGame(){
+        gameDay += 1
     }
     
     
