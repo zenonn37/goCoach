@@ -22,7 +22,7 @@ class PlayerCell: UITableViewCell {
         nameLbl.text = player.first + " " + player.last
         playerImage.image = UIImage(named: "male_94.jpg")
         //positionLbl.text = "LB,WR"
-        uniformNumberLbl.text = "45"
+        uniformNumberLbl.text = player.number
       
         
         

@@ -18,7 +18,10 @@ class PlayerProfileVC: UIViewController {
     var stats:List<FootballStat>?
     
     var completions:Int = 0
-    var passingYds:Double = 0
+    var passingYds:Int = 0
+    var attempt:Int = 0
+    var passingTouchDowns:Int = 0
+    var interception:Int = 0;
     
     
     
@@ -40,9 +43,14 @@ class PlayerProfileVC: UIViewController {
     @IBOutlet weak var plays: UILabel!
     
     @IBOutlet weak var fumbles: UILabel!
+    @IBOutlet weak var uniformNumber: UILabel!
     
     
+    @IBOutlet weak var birthDate: UILabel!
     
+    @IBOutlet weak var height: UILabel!
+    @IBOutlet weak var weight: UILabel!
+    @IBOutlet weak var positionPri: UILabel!
     
     
     override func viewDidLoad() {
@@ -78,6 +86,11 @@ class PlayerProfileVC: UIViewController {
              //let teams = realm.objects(Team.self).filter("id = '\(tm.id)'")
             playerName.text = ath[0].first + " " + ath[0].last
             position.text = ath[0].position
+            uniformNumber.text = ath[0].number
+            birthDate.text = ath[0].birth
+            height.text = ath[0].height
+            weight.text = ath[0].weight
+            positionPri.text = ath[0].position
             
             getStats()
             
@@ -97,10 +110,17 @@ class PlayerProfileVC: UIViewController {
                   print(stat.passingYards)
                 completions += stat.completions
                 passingYds += stat.passingYards
+                attempt += stat.passingAttempts
+                passingTouchDowns += stat.passingTouchDowns
+                interception += stat.Interceptions
+                
             }
             
             passingYards.text = String(passingYds)
             Completetions.text = String(completions)
+            attempts.text = String(attempt)
+            passingTD.text = String(passingTouchDowns)
+            
         }
         
      

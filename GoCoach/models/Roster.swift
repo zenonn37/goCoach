@@ -16,7 +16,14 @@ class Roster: Object {
     @objc dynamic var first:String=""
     @objc dynamic var last:String=""
     @objc dynamic var age:String=""
-    @objc dynamic var position:String=""
+    @objc dynamic var position:String = ""
+    @objc dynamic var number:String = ""
+    @objc dynamic var starter:Bool = false
+    @objc dynamic var height:String = ""
+    @objc dynamic var weight:String = ""
+    @objc dynamic var year:String = ""
+    @objc dynamic var birth:String = ""
+    
     
     let positions = List<Position>()
     let footballStats = List<FootballStat>()

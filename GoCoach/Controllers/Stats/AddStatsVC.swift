@@ -54,11 +54,11 @@ class AddStatsVC: UIViewController {
         
         let stat = FootballStat()
         
-        stat.passingYards = Double(passingYdsTXT.text!) ?? 0
+        stat.passingYards = Int(passingYdsTXT.text!) ?? 0
         stat.passingAttempts = Int(attemptsTxt.text!) ?? 0
         stat.completions = Int(completionsTxt.text!) ?? 0
         stat.passingTouchDowns = Int(passingTDTxt.text!) ?? 0
-        stat.rushingYards = Double(rushingYdsTxt.text!) ?? 0
+        stat.rushingYards = Int(rushingYdsTxt.text!) ?? 0
         stat.rushingTouchDowns = Int(rushingTDTxt.text!) ?? 0
         
         
