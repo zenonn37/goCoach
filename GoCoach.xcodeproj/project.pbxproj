@@ -26,6 +26,10 @@
 		0CB2FE89215142060079FE17 /* EditTeamVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE88215142060079FE17 /* EditTeamVC.swift */; };
 		0CBA507C215A8D010018D943 /* StaffProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CBA507B215A8D010018D943 /* StaffProfile.swift */; };
 		0CE34D1D215837F6006B8927 /* PlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CE34D1C215837F6006B8927 /* PlayerVC.swift */; };
+		0CED96C5216D1C540039608D /* TeamStartVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED96C4216D1C540039608D /* TeamStartVC.swift */; };
+		0CED96C7216D2B3E0039608D /* TeamStepTwoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED96C6216D2B3E0039608D /* TeamStepTwoVC.swift */; };
+		0CED96C9216D2C4E0039608D /* teamStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED96C8216D2C4E0039608D /* teamStep.swift */; };
+		0CED96CC216D32EE0039608D /* walkThrough.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED96CB216D32EE0039608D /* walkThrough.swift */; };
 		0CF46BAB215842A8009A2925 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF46BAA215842A8009A2925 /* PlayerCell.swift */; };
 		0CF46BAD21592680009A2925 /* CreatePlayerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF46BAC21592680009A2925 /* CreatePlayerVC.swift */; };
 		0CF46BB621597534009A2925 /* PlayerProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CF46BB521597534009A2925 /* PlayerProfileVC.swift */; };
@@ -84,6 +88,10 @@
 		0CB2FE88215142060079FE17 /* EditTeamVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditTeamVC.swift; sourceTree = "<group>"; };
 		0CBA507B215A8D010018D943 /* StaffProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaffProfile.swift; sourceTree = "<group>"; };
 		0CE34D1C215837F6006B8927 /* PlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerVC.swift; sourceTree = "<group>"; };
+		0CED96C4216D1C540039608D /* TeamStartVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStartVC.swift; sourceTree = "<group>"; };
+		0CED96C6216D2B3E0039608D /* TeamStepTwoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamStepTwoVC.swift; sourceTree = "<group>"; };
+		0CED96C8216D2C4E0039608D /* teamStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamStep.swift; sourceTree = "<group>"; };
+		0CED96CB216D32EE0039608D /* walkThrough.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = walkThrough.swift; sourceTree = "<group>"; };
 		0CF46BAA215842A8009A2925 /* PlayerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
 		0CF46BAC21592680009A2925 /* CreatePlayerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePlayerVC.swift; sourceTree = "<group>"; };
 		0CF46BB521597534009A2925 /* PlayerProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerProfileVC.swift; sourceTree = "<group>"; };
@@ -194,6 +202,7 @@
 				0CB2FE78215030840079FE17 /* Positions.swift */,
 				0CB2FE7A215032AB0079FE17 /* FootballStats.swift */,
 				0CF46BBF215A64E8009A2925 /* Staff.swift */,
+				0CED96CA216D32B90039608D /* structs */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -209,6 +218,7 @@
 		0CB2FE7D2150418F0079FE17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0CED96C3216D1C1A0039608D /* teamSteps */,
 				0C62521F2162803E00DAAD08 /* Stats */,
 				0CF46BBE215A6398009A2925 /* Account */,
 				0CF46BBD215A6372009A2925 /* Team */,
@@ -233,6 +243,24 @@
 				0CF46BC1215A696B009A2925 /* StaffCell.swift */,
 			);
 			path = Cell;
+			sourceTree = "<group>";
+		};
+		0CED96C3216D1C1A0039608D /* teamSteps */ = {
+			isa = PBXGroup;
+			children = (
+				0CED96C4216D1C540039608D /* TeamStartVC.swift */,
+				0CED96C6216D2B3E0039608D /* TeamStepTwoVC.swift */,
+			);
+			path = teamSteps;
+			sourceTree = "<group>";
+		};
+		0CED96CA216D32B90039608D /* structs */ = {
+			isa = PBXGroup;
+			children = (
+				0CED96C8216D2C4E0039608D /* teamStep.swift */,
+				0CED96CB216D32EE0039608D /* walkThrough.swift */,
+			);
+			path = structs;
 			sourceTree = "<group>";
 		};
 		0CF46BBB215A6345009A2925 /* Staff */ = {
@@ -522,6 +550,7 @@
 				0CB2FE83215046420079FE17 /* TeamCell.swift in Sources */,
 				0CB2FE80215041BF0079FE17 /* TeamListVC.swift in Sources */,
 				0CE34D1D215837F6006B8927 /* PlayerVC.swift in Sources */,
+				0CED96CC216D32EE0039608D /* walkThrough.swift in Sources */,
 				0CF46BC0215A64E8009A2925 /* Staff.swift in Sources */,
 				0CBA507C215A8D010018D943 /* StaffProfile.swift in Sources */,
 				0CF46BBA215A633C009A2925 /* StaffVC.swift in Sources */,
@@ -531,10 +560,13 @@
 				0C19C3BA2150058700B37416 /* TeamVC.swift in Sources */,
 				0CF46BC4215A7BB1009A2925 /* CreateStaffVC.swift in Sources */,
 				0CB2FE7721502F7B0079FE17 /* Roster.swift in Sources */,
+				0CED96C7216D2B3E0039608D /* TeamStepTwoVC.swift in Sources */,
 				0CB2FE79215030840079FE17 /* Positions.swift in Sources */,
 				0C19C3B82150058700B37416 /* AppDelegate.swift in Sources */,
 				0CB2FE89215142060079FE17 /* EditTeamVC.swift in Sources */,
 				0C6252212162806B00DAAD08 /* AddStatsVC.swift in Sources */,
+				0CED96C5216D1C540039608D /* TeamStartVC.swift in Sources */,
+				0CED96C9216D2C4E0039608D /* teamStep.swift in Sources */,
 				0CF46BAB215842A8009A2925 /* PlayerCell.swift in Sources */,
 				0CF46BC2215A696B009A2925 /* StaffCell.swift in Sources */,
 				0CF46BAD21592680009A2925 /* CreatePlayerVC.swift in Sources */,
