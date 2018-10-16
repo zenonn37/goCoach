@@ -15,6 +15,10 @@
 		0C19C3CD2150058900B37416 /* GoCoachTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C3CC2150058900B37416 /* GoCoachTests.swift */; };
 		0C19C3D82150058A00B37416 /* GoCoachUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C3D72150058A00B37416 /* GoCoachUITests.swift */; };
 		0C19C45A21501B5800B37416 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C19C45921501B5800B37416 /* Team.swift */; };
+		0C42276F217639A800B06B79 /* ScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C42276E217639A800B06B79 /* ScheduleVC.swift */; };
+		0C42277121763DFA00B06B79 /* Schedule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C42277021763DFA00B06B79 /* Schedule.swift */; };
+		0C4227732176468F00B06B79 /* ScheduleCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4227722176468F00B06B79 /* ScheduleCell.swift */; };
+		0C4227752176539100B06B79 /* CreateScheduleVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C4227742176539100B06B79 /* CreateScheduleVC.swift */; };
 		0C6252212162806B00DAAD08 /* AddStatsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C6252202162806B00DAAD08 /* AddStatsVC.swift */; };
 		0CB2FE7721502F7B0079FE17 /* Roster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE7621502F7B0079FE17 /* Roster.swift */; };
 		0CB2FE79215030840079FE17 /* Positions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CB2FE78215030840079FE17 /* Positions.swift */; };
@@ -77,6 +81,10 @@
 		0C19C3D72150058A00B37416 /* GoCoachUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoCoachUITests.swift; sourceTree = "<group>"; };
 		0C19C3D92150058A00B37416 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C19C45921501B5800B37416 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		0C42276E217639A800B06B79 /* ScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleVC.swift; sourceTree = "<group>"; };
+		0C42277021763DFA00B06B79 /* Schedule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schedule.swift; sourceTree = "<group>"; };
+		0C4227722176468F00B06B79 /* ScheduleCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleCell.swift; sourceTree = "<group>"; };
+		0C4227742176539100B06B79 /* CreateScheduleVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateScheduleVC.swift; sourceTree = "<group>"; };
 		0C6252202162806B00DAAD08 /* AddStatsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddStatsVC.swift; sourceTree = "<group>"; };
 		0CB2FE7621502F7B0079FE17 /* Roster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Roster.swift; sourceTree = "<group>"; };
 		0CB2FE78215030840079FE17 /* Positions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Positions.swift; sourceTree = "<group>"; };
@@ -202,9 +210,19 @@
 				0CB2FE78215030840079FE17 /* Positions.swift */,
 				0CB2FE7A215032AB0079FE17 /* FootballStats.swift */,
 				0CF46BBF215A64E8009A2925 /* Staff.swift */,
+				0C42277021763DFA00B06B79 /* Schedule.swift */,
 				0CED96CA216D32B90039608D /* structs */,
 			);
 			path = models;
+			sourceTree = "<group>";
+		};
+		0C42276D2176398A00B06B79 /* schedule */ = {
+			isa = PBXGroup;
+			children = (
+				0C42276E217639A800B06B79 /* ScheduleVC.swift */,
+				0C4227742176539100B06B79 /* CreateScheduleVC.swift */,
+			);
+			path = schedule;
 			sourceTree = "<group>";
 		};
 		0C62521F2162803E00DAAD08 /* Stats */ = {
@@ -218,6 +236,7 @@
 		0CB2FE7D2150418F0079FE17 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				0C42276D2176398A00B06B79 /* schedule */,
 				0CED96C3216D1C1A0039608D /* teamSteps */,
 				0C62521F2162803E00DAAD08 /* Stats */,
 				0CF46BBE215A6398009A2925 /* Account */,
@@ -241,6 +260,7 @@
 				0CB2FE82215046420079FE17 /* TeamCell.swift */,
 				0CF46BAA215842A8009A2925 /* PlayerCell.swift */,
 				0CF46BC1215A696B009A2925 /* StaffCell.swift */,
+				0C4227722176468F00B06B79 /* ScheduleCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -554,12 +574,16 @@
 				0CF46BC0215A64E8009A2925 /* Staff.swift in Sources */,
 				0CBA507C215A8D010018D943 /* StaffProfile.swift in Sources */,
 				0CF46BBA215A633C009A2925 /* StaffVC.swift in Sources */,
+				0C42276F217639A800B06B79 /* ScheduleVC.swift in Sources */,
+				0C4227732176468F00B06B79 /* ScheduleCell.swift in Sources */,
+				0C4227752176539100B06B79 /* CreateScheduleVC.swift in Sources */,
 				0C19C45A21501B5800B37416 /* Team.swift in Sources */,
 				0CB2FE872150570E0079FE17 /* TeamDashboardVC.swift in Sources */,
 				0CB2FE7B215032AB0079FE17 /* FootballStats.swift in Sources */,
 				0C19C3BA2150058700B37416 /* TeamVC.swift in Sources */,
 				0CF46BC4215A7BB1009A2925 /* CreateStaffVC.swift in Sources */,
 				0CB2FE7721502F7B0079FE17 /* Roster.swift in Sources */,
+				0C42277121763DFA00B06B79 /* Schedule.swift in Sources */,
 				0CED96C7216D2B3E0039608D /* TeamStepTwoVC.swift in Sources */,
 				0CB2FE79215030840079FE17 /* Positions.swift in Sources */,
 				0C19C3B82150058700B37416 /* AppDelegate.swift in Sources */,

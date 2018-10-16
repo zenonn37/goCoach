@@ -22,6 +22,7 @@ class Team: Object {
     
     let roster = List<Roster>()
     let staff = List<Staff>()
+    let schedule = List<Schedule>()
     
     
     override static func primaryKey() -> String?{

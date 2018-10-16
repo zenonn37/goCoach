@@ -99,6 +99,9 @@ class PlayerVC: UIViewController {
 
 extension PlayerVC: UITableViewDelegate, UITableViewDataSource{
     
+    
+    
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return players?.count ?? 1
     }
