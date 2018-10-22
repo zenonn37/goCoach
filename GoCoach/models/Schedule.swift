@@ -22,6 +22,14 @@ class Schedule: Object {
      @objc dynamic var venue:String = ""
      @objc dynamic var home:Bool = false
      @objc dynamic var creation = Date()
+     @objc dynamic var teamScore:Int = 0
+     @objc dynamic var opponentScore:Int = 0
+     @objc dynamic var win:Int = 0
+     @objc dynamic var lose:Int = 0
+     @objc dynamic var tie:Int = 0
+     @objc dynamic var played:Bool = false
+     @objc dynamic var result:String = "TBD"
+
     
     var team = LinkingObjects(fromType: Team.self, property: "schedule")
     

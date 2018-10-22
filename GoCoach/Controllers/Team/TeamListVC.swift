@@ -14,6 +14,7 @@ class TeamListVC: UIViewController {
     
     let realm = try! Realm()
     var teams:Results<Team>?
+  
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -83,6 +84,7 @@ extension TeamListVC: UITableViewDelegate, UITableViewDataSource{
         }
         
         if let team = teams?[indexPath.row] {
+            //print(team.schedule[indexPath.row])
             cell.configureTeam(team: team)
         }else{
             cell.textLabel?.text = "Empty"
@@ -147,7 +149,7 @@ extension TeamListVC: UITableViewDelegate, UITableViewDataSource{
         }else if segue.identifier == "editTeam" {
             let editTeam = segue.destination as! EditTeamVC
             if let indexPath = tableView.indexPathForSelectedRow{
-                print(teams?[indexPath.row])
+               
                 editTeam.teamEdit = teams?[indexPath.row]
                 
             }else{

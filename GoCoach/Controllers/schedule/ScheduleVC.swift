@@ -59,9 +59,23 @@ class ScheduleVC: UIViewController {
     
     }
     
+    
+    
 
   
-
+    @IBAction func newGame(_ sender: Any) {
+        
+        performSegue(withIdentifier: "createSchedule", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "createSchedule"{
+            let createSchedule = segue.destination as? CreateScheduleVC
+            
+            createSchedule?.selectedTeams = selectedTeam
+        }
+    }
+    
 }
 
 extension ScheduleVC: UITableViewDataSource, UITableViewDelegate{

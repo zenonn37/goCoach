@@ -31,7 +31,7 @@ class AccountDash: UIViewController {
     @IBAction func newTeam(_ sender: Any) {
         //performSegue(withIdentifier: "newTeam", sender: self)
         
-        performSegue(withIdentifier: "newTeamWalk", sender: self)
+        performSegue(withIdentifier: "newTeam", sender: self)
     }
     
     @IBAction func teamList(_ sender: Any) {
